@@ -5,12 +5,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #eef4fb;
+  --surface: #ffffff;
+  --surface-soft: #f8fbff;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #2563eb;
+  --border: rgba(148, 163, 184, 0.22);
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
 /* Body styling */
 body {
   font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 30%), #eff4fb;
-  color: #0f172a;
+  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.12), transparent 30%), var(--bg);
+  color: var(--text);
   line-height: 1.75;
+  min-height: 100vh;
 }
 
 /* Navigation */
@@ -19,14 +31,15 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 20px 8%;
-  background-color: rgba(255, 255, 255, 0.96);
+  padding: 18px 6%;
+  background-color: rgba(255, 255, 255, 0.95);
 
   position: sticky;
   top: 0;
   z-index: 1000;
 
-  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
 }
 
@@ -46,15 +59,16 @@ section {
 
 .nav-links a {
   text-decoration: none;
-  color: #0f172a;
+  color: var(--text);
   font-weight: 600;
   letter-spacing: 0.04em;
   font-size: 19px;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .nav-links a:hover {
-  color: #2563eb;
+  color: var(--accent);
+  transform: translateY(-1px);
 }
 
 /* Hero Section */
@@ -63,12 +77,20 @@ section {
 .skills,
 .projects,
 .contact {
-  background-color: white;
+  background-color: var(--surface);
   border-radius: 32px;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow);
   border: 1px solid rgba(148, 163, 184, 0.16);
   margin: 0 10% 40px;
   padding: 80px 60px;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  background-image: radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.08), transparent 26%);
 }
 
 .hero {
@@ -77,6 +99,14 @@ section {
   align-items: center;
   min-height: 75vh;
   margin-top: 28px;
+  gap: 40px;
+  background-image: linear-gradient(135deg, rgba(37, 99, 235, 0.84), rgba(96, 165, 250, 0.24)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border: none;
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.2);
 }
 
 .hero-text {
@@ -86,46 +116,50 @@ section {
 .hero-text h2 {
   font-size: 54px;
   margin-bottom: 20px;
-  color: #0f172a;
+  color: #ffffff;
+  line-height: 1.05;
 }
 
 .hero-text p {
   font-size: 20px;
   margin-bottom: 32px;
-  color: #475569;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 /* Button */
 .btn {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 14px 32px;
 
-  background-color: #2563eb;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.96);
+  color: #1f2937;
 
   text-decoration: none;
-  border-radius: 14px;
-  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.18);
 
   transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
 .btn:hover {
-  background-color: #1d4ed8;
+  background-color: #ffffff;
   transform: translateY(-1px);
 }
 
 /* Hero Image */
 .hero-image img {
-  width: 320px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 360px;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.24);
 }
 
 /* Shared headings */
 section h2 {
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 26px;
+  color: var(--text);
 }
 
 /* Skills Section */
