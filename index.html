@@ -6,7 +6,7 @@
   <title>Jason Wu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="home">
+<body>
 
   <!-- Navigation -->
   <header>
@@ -22,7 +22,7 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-text">
       <h2>Hello, I'm Jason Wu</h2>
       <p>
@@ -116,9 +116,22 @@
   <section id="contact" class="contact">
     <h2>Contact</h2>
 
-    <p>Email: jasonwu@bu.edu</p>
-    <p>GitHub: github.com/yourusername</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
+    <div class="contact-list">
+      <a href="mailto:jasonwu@bu.edu" class="contact-item">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg" alt="Email icon" />
+        <span>jasonwu@bu.edu</span>
+      </a>
+
+      <a href="https://github.com/yourusername" class="contact-item" target="_blank" rel="noreferrer noopener">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon" />
+        <span>github.com/yourusername</span>
+      </a>
+
+      <a href="https://linkedin.com/in/yourname" class="contact-item" target="_blank" rel="noreferrer noopener">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" />
+        <span>linkedin.com/in/yourname</span>
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
