@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jason Wu | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
-<body>
+<body id="home">
 
   <!-- Navigation -->
   <header>
@@ -14,8 +15,10 @@
       <h1 class="logo">JasonWu</h1>
 
       <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -55,15 +58,59 @@
 
   <!-- Skills Section -->
   <section id="skills" class="skills">
-    <h2>Skills</h2>
+    <div class="skills-header">
+      <h2>My Skills</h2>
+    </div>
 
-    <ul class="skill-list">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Version Control (Git)</li>
-    </ul>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <div class="skill-icon-wrapper">
+          <span class="material-icons skill-icon">code</span>
+        </div>
+        <p>HTML</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-wrapper">
+          <span class="material-icons skill-icon">palette</span>
+        </div>
+        <p>CSS</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-wrapper">
+          <span class="material-icons skill-icon">laptop_mac</span>
+        </div>
+        <p>JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-wrapper">
+          <span class="material-icons skill-icon">memory</span>
+        </div>
+        <p>Python</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-wrapper">
+          <span class="material-icons skill-icon">storage</span>
+        </div>
+        <p>PostgreSQL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>
+      I am building personal and school projects that focus on clean design,
+      responsive layouts, and user-friendly interfaces.
+    </p>
+    <p>
+      Sample project ideas include portfolio pages, simple web apps, and
+      student-focused coursework websites.
+    </p>
   </section>
 
   <!-- Contact Section -->

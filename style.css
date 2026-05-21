@@ -98,6 +98,77 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Shared headings */
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills {
+  padding: 100px 10%;
+  background-color: #e7eed8;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  width: 100%;
+  max-width: 160px;
+  background-color: white;
+  border-radius: 24px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.08);
+}
+
+.skill-icon-wrapper {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f4f9ff;
+}
+
+.skill-icon {
+  font-size: 36px;
+  color: #0071e3;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Projects Section */
+.projects {
+  padding: 100px 10%;
+  background-color: white;
+}
+
+.projects p {
+  max-width: 700px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
 /* About Section */
 .about {
   padding: 100px 10%;
@@ -115,26 +186,6 @@ body {
   max-width: 700px;
   margin-bottom: 15px;
   color: #555;
-}
-
-/* Skills Section */
-.skills {
-  padding: 100px 10%;
-}
-
-.skill-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(160px, 1fr));
-  gap: 15px;
-}
-
-.skill-list li {
-  background-color: white;
-  padding: 18px 20px;
-  border-radius: 12px;
-  border: 1px solid #e0e0e4;
-  color: #333;
 }
 
 /* Contact Section */
