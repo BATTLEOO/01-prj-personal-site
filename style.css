@@ -136,18 +136,20 @@ section h2 {
 }
 
 .skill-icon-wrapper {
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: #f4f9ff;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.skill-icon {
-  font-size: 36px;
-  color: #0071e3;
+.skill-icon-wrapper img {
+  width: 52px;
+  height: auto;
+  object-fit: contain;
 }
 
 .skill-card p {
