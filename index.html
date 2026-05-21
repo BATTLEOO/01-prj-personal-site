@@ -31,10 +31,8 @@
       <p>
         A computer science student at Boston University building modern and responsive websites.
       </p>
-
       <a href="#contact" class="btn">Contact Me</a>
     </div>
-
     <div class="hero-image">
       <img src="img/jasonwupic.jpg" alt="Jason Wu profile photo" />
     </div>
@@ -42,22 +40,26 @@
 
   <!-- About Section -->
   <section id="about" class="about">
-    <h2>About Me</h2>
-
-    <p>
-      I am currently studying computer science at Boston University and
-      learning how to build clean, user-friendly websites using HTML, CSS,
-      and JavaScript.
-    </p>
-
-    <p>
-      My goal is to create professional and modern web experiences while
-      continuously improving my skills as a developer.
-    </p>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I am currently studying computer science at Boston University and
+        learning how to build clean, user-friendly websites using HTML, CSS,
+        and JavaScript.
+      </p>
+      <p>
+        My goal is to create professional and modern web experiences while
+        continuously improving my skills as a developer.
+      </p>
+    </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" class="skills">
+    <div class="skills-bg-img">
+      <img src="img/laptop.jpg" alt="" aria-hidden="true" />
+    </div>
+
     <div class="skills-header">
       <h2>My Skills</h2>
       <p class="skills-subtitle">This is my skills.</p>
@@ -70,35 +72,30 @@
         </div>
         <p>HTML</p>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon-wrapper">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 icon" />
         </div>
         <p>CSS</p>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon-wrapper">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript icon" />
         </div>
         <p>JavaScript</p>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon-wrapper">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python icon" />
         </div>
         <p>Python</p>
       </div>
-
       <div class="skill-card">
         <div class="skill-icon-wrapper">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java icon" />
         </div>
         <p>Java</p>
       </div>
-
     </div>
   </section>
 
@@ -107,33 +104,37 @@
     <h2>Projects</h2>
 
     <div class="project-grid">
-
       <div class="project-card">
-        <div class="project-card-header">
-          <div class="project-icon">🎲</div>
-          <div class="project-tags">
-            <span class="tag">Java</span>
-            <span class="tag">Deep RL</span>
-            <span class="tag">Neural Networks</span>
+        <div class="project-card-img">
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1400&q=80" alt="World map" />
+          <div class="project-card-img-overlay"></div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-top">
+            <span class="project-number">01</span>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Deep RL</span>
+              <span class="tag">Neural Networks</span>
+            </div>
+          </div>
+          <h3>Risk AI Agent</h3>
+          <p class="project-course">CS 440 · Introduction to Artificial Intelligence · BU</p>
+          <p class="project-desc">
+            Collaborated in a team to build a neural network-based AI agent to play the board game
+            Risk using deep Q-learning with experience replay. Designed a dual-decoder architecture
+            with a shared encoder — one decoder for territory placement, another for attack and
+            fortify decisions. Implemented custom sensor arrays and reward functions to guide the
+            agent toward winning strategies.
+          </p>
+          <div class="project-footer">
+            <a href="https://github.com/MCLa1121/CS440" class="project-link" target="_blank" rel="noreferrer noopener">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+              View on GitHub
+            </a>
           </div>
         </div>
-        <h3>Risk AI Agent</h3>
-        <p class="project-course">CS 440 — Introduction to Artificial Intelligence · Boston University</p>
-        <p class="project-desc">
-          Built a neural network-based AI agent to play the board game Risk using deep Q-learning
-          with experience replay. Designed a dual-decoder architecture with a shared encoder —
-          one decoder for territory placement decisions and another for attack/fortify actions.
-          Implemented custom sensor arrays to convert game state into feature vectors and tuned
-          reward functions to guide the agent toward winning strategies.
-        </p>
-        <div class="project-footer">
-          <a href="https://github.com/yourusername" class="project-link" target="_blank" rel="noreferrer noopener">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-            View on GitHub
-          </a>
-        </div>
       </div>
-
     </div>
   </section>
 
@@ -146,15 +147,13 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail icon" />
         <span>jasonwu@bu.edu</span>
       </a>
-
-      <a href="https://github.com/yourusername" class="contact-item" target="_blank" rel="noreferrer noopener">
+      <a href="https://github.com/BATTLEOO" class="contact-item" target="_blank" rel="noreferrer noopener">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub icon" />
-        <span>github.com/yourusername</span>
+        <span>github.com/BATTLEOO</span>
       </a>
-
-      <a href="https://linkedin.com/in/yourname" class="contact-item" target="_blank" rel="noreferrer noopener">
+      <a href="https://linkedin.com/in/jason-wu-125143326" class="contact-item" target="_blank" rel="noreferrer noopener">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" />
-        <span>linkedin.com/in/yourname</span>
+        <span>linkedin.com/in/jason-wu-125143326</span>
       </a>
     </div>
   </section>
